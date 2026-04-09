@@ -11,11 +11,11 @@
 <body>
 
     <svg viewBox="0 0 600 300">
-        <!-- Symbol-->
+
         <symbol id="s-text">
             <text text-anchor="middle" x="50%" y="50%" dy=".35em">Bhadvi Bhindi</text>
         </symbol>
-        <!-- Duplicate symbols-->
+
         <use class="text" xlink:href="#s-text"></use>
         <use class="text" xlink:href="#s-text"></use>
         <use class="text" xlink:href="#s-text"></use>
@@ -24,4 +24,80 @@
     </svg>
 </body>
 
+
 </html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Funny Calorie Calculator 😂🔥</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #111;
+            color: white;
+            padding: 50px;
+        }
+
+        input,
+        select,
+        button {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            border: none;
+        }
+
+        button {
+            background: #ff4d4d;
+            color: white;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>😂 Funny Calorie Calculator 🔥</h1>
+    <input type="text" id="name" placeholder="Enter your name">
+    <br>
+    <select id="activity">
+        <option>Sleeping 😴</option>
+        <option>Scrolling Reels 📱</option>
+        <option>Gym Workout 💪</option>
+        <option>Talking Nonstop 🗣️</option>
+        <option>Doing Nothing 🛋️</option>
+    </select>
+    <br>
+    <input type="number" id="hours" placeholder="Hours spent">
+    <br>
+    <button onclick="calculate()">Calculate 😂</button>
+    <div id="result"></div>
+    <script>
+        function calculate() {
+            let name = document.getElementById("name").value;
+            let activity = document.getElementById("activity").value;
+            let hours = document.getElementById("hours").value;
+            let calories = Math.floor(Math.random() * 500);
+            let messages = [
+                "Bro you're basically a potato 🥔",
+                "Elite athlete vibes 💪🔥",
+                "NASA wants to study your energy 🚀",
+                "You burned nothing… just time 😭",
+                "Gym influencer in making 😎",
+                "Energy level: 404 Not Found 😂"
+            ];
+            let msg = messages[Math.floor(Math.random() * messages.length)];
+            document.getElementById("result").innerHTML =
+                `<b>${name}</b>, doing <b>${activity}</b> for <b>${hours}</b> hrs burned <b>${calories}</b> calories 😂<br><br>${msg}`;
+        }
+    </script>
+</body>
+
+</html> -->
